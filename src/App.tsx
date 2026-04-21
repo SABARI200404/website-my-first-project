@@ -184,13 +184,13 @@ const Hero = () => {
             <a href="#book" className="bg-navy text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-accent-red transition-all shadow-2xl flex items-center gap-3 group">
               Book Home Pickup <ArrowRight className="group-hover:translate-x-2 transition" />
             </a>
-            <a href="tel:8248667253" className="flex items-center gap-4 group">
+            <a href="tel:9841323800" className="flex items-center gap-4 group">
               <div className="w-14 h-14 rounded-full border-2 border-navy flex items-center justify-center text-navy group-hover:bg-navy group-hover:text-white transition-all">
                 <Phone size={24} />
               </div>
               <div className="text-left">
                 <p className="text-[10px] uppercase tracking-widest font-black text-slate-400">Emergency Call</p>
-                <p className="text-xl font-bold text-navy tracking-tight">82486 67253</p>
+                <p className="text-xl font-bold text-navy tracking-tight">98413 23800</p>
               </div>
             </a>
           </div>
@@ -410,7 +410,7 @@ const AppointmentForm = ({ selectedTest }: { selectedTest?: string }) => {
         const msg = `*NEW BOOKING: SRIRAM LAB*\n--------------------------\n*Package:* ${formData.testType}\n*Patient:* ${formData.name}\n*Phone:* ${formData.phone}\n*Email:* ${formData.email}\n*Date:* ${formData.date}\n--------------------------\n_Please confirm the availability._`;
         
         setTimeout(() => {
-          window.open(`https://wa.me/918248667253?text=${encodeURIComponent(msg)}`);
+          window.open(`https://wa.me/919841323800?text=${encodeURIComponent(msg)}`);
         }, 1500);
 
         setFormData({ name: "", phone: "", email: "", testType: "", date: "" });
@@ -440,7 +440,7 @@ const AppointmentForm = ({ selectedTest }: { selectedTest?: string }) => {
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center"><Phone size={18} /></div>
-                <p className="font-bold">82486 67253</p>
+                <p className="font-bold">98413 23800</p>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center"><Clock size={18} /></div>
@@ -577,7 +577,7 @@ const Contact = () => {
               <div className="w-14 h-14 rounded-2xl bg-slate-100 flex items-center justify-center text-navy flex-shrink-0"><Phone size={24} /></div>
               <div>
                 <p className="text-[10px] uppercase tracking-widest font-black text-slate-400 mb-1">Contact Numbers</p>
-                <p className="text-lg font-bold text-navy leading-tight">044-33265562 <br /> 82486 67253</p>
+                <p className="text-lg font-bold text-navy leading-tight">044-33265562 <br /> 98413 23800</p>
               </div>
             </div>
           </div>
