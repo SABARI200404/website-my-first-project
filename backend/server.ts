@@ -8,10 +8,17 @@ dotenv.config();
 
 const app = express();
 const PORT = 3000;
-const APPOINTMENTS_FILE = path.join(process.cwd(), "appointments.json");
+const APPOINTMENTS_FILE = path.join(process.cwd(), "backend", "appointments.json");
 
 async function initFile() {
   try {
+    const backendDir = path.join(process.cwd(), "backend");
+    try {
+      await fs.access(backendDir);
+    } catch {
+      await fs.mkdir(backendDir, { recursive: true });
+    }
+    
     await fs.access(APPOINTMENTS_FILE);
   } catch {
     await fs.writeFile(APPOINTMENTS_FILE, JSON.stringify([]));
